@@ -2,7 +2,8 @@
 Villa del rio
 Página web desarrollada para villa del rio,
 ubicado en Puerto tembleque
-Que las personas o empresas interesadas en comprar porcinos tengan que recorrer largas distancias para recibir la informacion escencial para la compra de porcinos ya no van a ser un problema porque villa del rio ofrece esta informacion por medio de sus canales de atencion, proporcionan la informacion y permiten ver los cerdos por medio de las camaras que tenemos.
+ubicado en Puerto tembleque,
+ las personas o empresas interesadas en comprar porcinos que tengan que recorrer largas distancias para recibir la informacion escencial para la compra de porcinos ya no van a tener ese  problema porque villa del rio ofrece esta informacion por medio de sus canales de atencion, proporcionan la informacion y permiten ver los cerdos por medio de las camaras e imagenes que proporcionamos.
 ## Enlace de la página
 https://villa-del-rio.github.io/villa-del-rio/
 ## Tecnologías usadas
