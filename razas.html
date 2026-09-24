@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conozca las razas porcinas criadas en Villa del Río S.A.S. - Landrace, Duroc, Pietrain y Yorkshire con genética de alto rendimiento.">
+    <title>Razas Porcinas | Villa del Río S.A.S.</title>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-info">
+                <span><i class="fas fa-phone-alt"></i> +57 312 345 6789</span>
+                <span><i class="fas fa-envelope"></i> contacto@villadelrio.com.co</span>
+            </div>
+            <div class="top-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/573123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación Principal -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon">🐖</div>
+                <div class="brand-text">
+                    <h1>Villa del Río S.A.S.</h1>
+                    <p>Porcinos de Alta Calidad</p>
+                </div>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Abrir Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Nosotros</a></li>
+                    <li><a href="razas.html" class="active">Razas</a></li>
+                    <li><a href="lotes.html">Lotes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="https://wa.me/573123456789" class="nav-cta" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de Encabezado -->
+    <div class="page-banner">
+        <div class="page-banner-content">
+            <div class="badge-tag"><i class="fas fa-dna"></i> Genética Seleccionada</div>
+            <h1>Nuestras Razas Porcinas</h1>
+            <p>Trabajamos con genética de alto rendimiento para ofrecer animales de excelente calidad, destacando la prolificidad, rusticidad y magrez muscular.</p>
+        </div>
+    </div>
+
+    <!-- Sección de Razas -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Botones de Filtro -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="todos">Todas las Razas</button>
+                <button class="filter-btn" data-filter="reproductiva">Reproductivas</button>
+                <button class="filter-btn" data-filter="carne">Carne Magra & Marmoleo</button>
+                <button class="filter-btn" data-filter="vigor">Vigor & Rusticidad</button>
+            </div>
+
+            <!-- Grilla de Tarjetas Personalizadas de Razas -->
+            <div class="contenedor-razas">
+
+                <!-- Card Landrace -->
+                <div class="card-raza" data-category="reproductiva">
+                    <div class="card-image-wrapper">
+                        <img src="img/landrace.jpg" alt="Raza Landrace Porcina">
+                        <span class="card-badge">Línea Maternal</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Prolificidad & Lactancia</span>
+                        <h3>Landrace <i class="fas fa-venus-mars" style="font-size: 1rem; color: var(--accent);"></i></h3>
+
+                        <p>
+                            Raza insigne reconocida mundialmente por su excelente capacidad reproductiva, temperamento dócil, rápido crecimiento y alto rendimiento en canal.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-baby"></i> Prolificidad:</strong> <span>12-14 lechones/camada</span></li>
+                            <li><strong><i class="fas fa-scale-balanced"></i> Conversión:</strong> <span>Excelente (2.4 - 2.6)</span></li>
+                            <li><strong><i class="fas fa-shirt"></i> Coloración:</strong> <span>Blanca, orejas caídas</span></li>
+                        </ul>
+
+                        <ul class="bullets-list">
+                            <li><i class="fas fa-check-circle"></i> Alta fertilidad y gran producción lechera.</li>
+                            <li><i class="fas fa-check-circle"></i> Excelente habilidad materna y docilidad.</li>
+                            <li><i class="fas fa-check-circle"></i> Crecimiento acelerado e ideal para cruces.</li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Raza Landrace', 'R-LANDRACE')">
+                                <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Duroc -->
+                <div class="card-raza" data-category="carne">
+                    <div class="card-image-wrapper">
+                        <img src="img/duroc.jpg" alt="Raza Duroc Porcina">
+                        <span class="card-badge" style="background: rgba(217,119,6,0.9);">Marmoleo Premium</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Calidad de Carne & Sabor</span>
+                        <h3>Duroc <i class="fas fa-drumstick-bite" style="font-size: 1rem; color: var(--accent);"></i></h3>
+
+                        <p>
+                            Destacada por su piel rojiza y por producir carne de extraordinaria jugosidad con marmoleo intramuscular superior, gran resistencia y desarrollo muscular.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-shield"></i> Rusticidad:</strong> <span>Muy Alta</span></li>
+                            <li><strong><i class="fas fa-weight-hanging"></i> Ganancia de Peso:</strong> <span>+850g / día</span></li>
+                            <li><strong><i class="fas fa-utensils"></i> Vértice Comercial:</strong> <span>Carne Premium</span></li>
+                        </ul>
+
+                        <ul class="bullets-list">
+                            <li><i class="fas fa-check-circle"></i> Carne con excelente infiltración grasa (marmoleo).</li>
+                            <li><i class="fas fa-check-circle"></i> Gran rusticidad y adaptación ambiental.</li>
+                            <li><i class="fas fa-check-circle"></i> Ideal como padrillo o línea terminal.</li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Raza Duroc', 'R-DUROC')">
+                                <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Pietrain -->
+                <div class="card-raza" data-category="carne">
+                    <div class="card-image-wrapper">
+                        <img src="img/pietrain.jpg" alt="Raza Pietrain Porcina">
+                        <span class="card-badge" style="background: rgba(14,116,144,0.9);">Máxima Carne Magra</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Conformación Muscular</span>
+                        <h3>Pietrain <i class="fas fa-dumbbell" style="font-size: 1rem; color: var(--accent);"></i></h3>
+
+                        <p>
+                            Raza especializada en la producción de carne magra de alto valor comercial, reconocida por sus lomos pronunciados y escaso contenido graso.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-chart-line"></i> Magrez:</strong> <span>>66% Carne Magra</span></li>
+                            <li><strong><i class="fas fa-percentage"></i> Rendimiento Canal:</strong> <span>82% - 84%</span></li>
+                            <li><strong><i class="fas fa-eye"></i> Apariencia:</strong> <span>Manchas negras sobre blanco</span></li>
+                        </ul>
+
+                        <ul class="bullets-list">
+                            <li><i class="fas fa-check-circle"></i> Mínimo porcentaje de grasa subcutánea.</li>
+                            <li><i class="fas fa-check-circle"></i> Jamones y lomos hiperdesarrollados.</li>
+                            <li><i class="fas fa-check-circle"></i> Excelente rendimiento en piezas nobles.</li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Raza Pietrain', 'R-PIETRAIN')">
+                                <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Yorkshire -->
+                <div class="card-raza" data-category="reproductiva">
+                    <div class="card-image-wrapper">
+                        <img src="img/yorkshire.jpg" alt="Raza Yorkshire Porcina">
+                        <span class="card-badge">Gran Madre</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Vigor Híbrido & Tamaño</span>
+                        <h3>Yorkshire / Large White <i class="fas fa-crown" style="font-size: 1rem; color: var(--accent);"></i></h3>
+
+                        <p>
+                            Conocida como la 'Raza Madre', combina una talla prominente, orejas erguidas, excelente fortaleza ósea y habilidades de crianza excepcionales.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-award"></i> Talla:</strong> <span>Prominente / Grande</span></li>
+                            <li><strong><i class="fas fa-heart"></i> Habilidad Materna:</strong> <span>Sobresaliente</span></li>
+                            <li><strong><i class="fas fa-bolt"></i> Vigor Crecimiento:</strong> <span>Rápido desarrollo</span></li>
+                        </ul>
+
+                        <ul class="bullets-list">
+                            <li><i class="fas fa-check-circle"></i> Camadas numerosas con alto peso al destete.</li>
+                            <li><i class="fas fa-check-circle"></i> Excelente adaptabilidad a galpones modernos.</li>
+                            <li><i class="fas fa-check-circle"></i> Base fundamental de programas de hibridación.</li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Raza Yorkshire', 'R-YORKSHIRE')">
+                                <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Villa del Río S.A.S.</h3>
+                <p>🐖 Produciendo porcinos de alta calidad con compromiso, tecnología y manejo responsable.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="razas.html"><i class="fas fa-chevron-right"></i> Razas</a></li>
+                    <li><a href="lotes.html"><i class="fas fa-chevron-right"></i> Lotes</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Bioseguridad</h3>
+                <p>Cumplimos con normativas sanitarias estrictas e inspección médica continuada.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Atención al Cliente</h3>
+                <p><i class="fas fa-phone-alt"></i> +57 312 345 6789</p>
+                <p><i class="fas fa-envelope"></i> contacto@villadelrio.com.co</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Villa del Río S.A.S. | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JS Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>

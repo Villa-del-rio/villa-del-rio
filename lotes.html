@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lotes disponibles de porcinos en Villa del Río S.A.S. - Animales seleccionados para levante, engorde y reproduccion con seguimiento sanitario.">
+    <title>Lotes Disponibles | Villa del Río S.A.S.</title>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-info">
+                <span><i class="fas fa-phone-alt"></i> +57 312 345 6789</span>
+                <span><i class="fas fa-envelope"></i> contacto@villadelrio.com.co</span>
+            </div>
+            <div class="top-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/573123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación Principal -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon">🐖</div>
+                <div class="brand-text">
+                    <h1>Villa del Río S.A.S.</h1>
+                    <p>Porcinos de Alta Calidad</p>
+                </div>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Abrir Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Nosotros</a></li>
+                    <li><a href="razas.html">Razas</a></li>
+                    <li><a href="lotes.html" class="active">Lotes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="https://wa.me/573123456789" class="nav-cta" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de Encabezado -->
+    <div class="page-banner">
+        <div class="page-banner-content">
+            <div class="badge-tag"><i class="fas fa-boxes-stacked"></i> Catálogo Comercial</div>
+            <h1>Nuestros Lotes Disponibles</h1>
+            <p>Conoce la oferta vigente de lotes de porcinos listos para levante, engorde o pie de cría con fichas técnicas y garantía biosegura.</p>
+        </div>
+    </div>
+
+    <!-- Sección de Lotes -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Botones de Filtro -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="todos">Todos los Lotes</button>
+                <button class="filter-btn" data-filter="crecimiento">En Crecimiento</button>
+                <button class="filter-btn" data-filter="engorde">Finalización / Engorde</button>
+                <button class="filter-btn" data-filter="magra">Carne Magra</button>
+                <button class="filter-btn" data-filter="lechones">Lechones Destetados</button>
+            </div>
+
+            <!-- Grilla de Tarjetas Personalizadas de Lotes -->
+            <div class="contenedor-lotes">
+
+                <!-- Lote 001 -->
+                <div class="card-lote" data-category="crecimiento">
+                    <div class="card-image-wrapper">
+                        <img src="img/lote1.jpg" alt="Lote 001 Landrace Crecimiento">
+                        <span class="card-badge badge-available"><i class="fas fa-circle-check"></i> Disponible</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Crecimiento & Levante</span>
+                        <h3>Lote 001 - Landrace Select</h3>
+
+                        <p>
+                            Grupo uniforme de porcinos en etapa de crecimiento, seleccionados bajo estrictas pruebas de conversión alimenticia y conformación sanitaria.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-dna"></i> Raza Principal:</strong> <span>Landrace Pureza</span></li>
+                            <li><strong><i class="fas fa-list-ol"></i> Cantidad:</strong> <span>50 Porcinos</span></li>
+                            <li><strong><i class="fas fa-weight-scale"></i> Peso Promedio:</strong> <span>85 kg / animal</span></li>
+                            <li><strong><i class="fas fa-calendar-days"></i> Edad:</strong> <span>16 Semanas</span></li>
+                            <li><strong><i class="fas fa-syringe"></i> Estado Sanitario:</strong> <span>Plan 100% Completo</span></li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Lote 001 - Landrace Select', 'LOTE-001')">
+                                <i class="fab fa-whatsapp"></i> Cotizar Lote 001
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lote 002 -->
+                <div class="card-lote" data-category="engorde">
+                    <div class="card-image-wrapper">
+                        <img src="img/lote2.jpg" alt="Lote 002 Duroc Engorde">
+                        <span class="card-badge badge-available"><i class="fas fa-circle-check"></i> Disponible</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Finalización Premium</span>
+                        <h3>Lote 002 - Duroc Master</h3>
+
+                        <p>
+                            Animales con excelente carga genética de resistencia y desarrollo muscular, en fase final para mercadeo de alta calidad cárnica.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-dna"></i> Raza Principal:</strong> <span>Duroc F1</span></li>
+                            <li><strong><i class="fas fa-list-ol"></i> Cantidad:</strong> <span>40 Porcinos</span></li>
+                            <li><strong><i class="fas fa-weight-scale"></i> Peso Promedio:</strong> <span>98 kg / animal</span></li>
+                            <li><strong><i class="fas fa-calendar-days"></i> Edad:</strong> <span>20 Semanas</span></li>
+                            <li><strong><i class="fas fa-drumstick-bite"></i> Infiltración:</strong> <span>Marmoleo Superior</span></li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Lote 002 - Duroc Master', 'LOTE-002')">
+                                <i class="fab fa-whatsapp"></i> Cotizar Lote 002
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lote 003 -->
+                <div class="card-lote" data-category="magra">
+                    <div class="card-image-wrapper">
+                        <img src="img/lote3.jpg" alt="Lote 003 Pietrain Magra">
+                        <span class="card-badge badge-reserved"><i class="fas fa-clock"></i> En Reserva</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Alto Rendimiento en Canal</span>
+                        <h3>Lote 003 - Pietrain Pro</h3>
+
+                        <p>
+                            Lote especializado en producción de carne magra de bajo porcentaje graso y máximo aprovechamiento industrial de corte noble.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-dna"></i> Raza Principal:</strong> <span>Pietrain Especial</span></li>
+                            <li><strong><i class="fas fa-list-ol"></i> Cantidad:</strong> <span>35 Porcinos</span></li>
+                            <li><strong><i class="fas fa-weight-scale"></i> Peso Promedio:</strong> <span>90 kg / animal</span></li>
+                            <li><strong><i class="fas fa-calendar-days"></i> Edad:</strong> <span>18 Semanas</span></li>
+                            <li><strong><i class="fas fa-percent"></i> Magrez Estimada:</strong> <span>>67%</span></li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Lote 003 - Pietrain Pro', 'LOTE-003')">
+                                <i class="fab fa-whatsapp"></i> Reservar Lote 003
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lote 004 -->
+                <div class="card-lote" data-category="lechones">
+                    <div class="card-image-wrapper">
+                        <img src="img/lote4.jpg" alt="Lote 004 Yorkshire Lechones">
+                        <span class="card-badge badge-upcoming"><i class="fas fa-truck-fast"></i> Próxima Entrega</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <span class="subtitle-tag">Lechones de Destete</span>
+                        <h3>Lote 004 - Yorkshire Vigor</h3>
+
+                        <p>
+                            Camadas recién destetadas de gran fortaleza inmunológica, criadas bajo ambiente termorregulado y listas para arranque de cebadero.
+                        </p>
+
+                        <ul class="specs-list">
+                            <li><strong><i class="fas fa-dna"></i> Raza Principal:</strong> <span>Yorkshire / Large White</span></li>
+                            <li><strong><i class="fas fa-list-ol"></i> Cantidad:</strong> <span>60 Lechones</span></li>
+                            <li><strong><i class="fas fa-weight-scale"></i> Peso Promedio:</strong> <span>18 kg / lechón</span></li>
+                            <li><strong><i class="fas fa-calendar-days"></i> Edad:</strong> <span>6 Semanas (Destetados)</span></li>
+                            <li><strong><i class="fas fa-shield-virus"></i> Vacunación:</strong> <span>Micoplasma + PCV2</span></li>
+                        </ul>
+
+                        <div class="card-actions">
+                            <button class="btn btn-whatsapp" onclick="cotizarWhatsApp('Lote 004 - Yorkshire Vigor', 'LOTE-004')">
+                                <i class="fab fa-whatsapp"></i> Apartar Lote 004
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Villa del Río S.A.S.</h3>
+                <p>🐖 Produciendo porcinos de alta calidad con compromiso, tecnología y manejo responsable.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="razas.html"><i class="fas fa-chevron-right"></i> Razas</a></li>
+                    <li><a href="lotes.html"><i class="fas fa-chevron-right"></i> Lotes</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Garantía Comercial</h3>
+                <p>Monitoreo de peso, guía sanitaria ICA y trazabilidad garantizada en todos los despatches.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Ventas Directas</h3>
+                <p><i class="fas fa-phone-alt"></i> +57 312 345 6789</p>
+                <p><i class="fas fa-envelope"></i> contacto@villadelrio.com.co</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Villa del Río S.A.S. | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JS Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
