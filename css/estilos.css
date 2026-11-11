@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Villa del Río S.A.S. - Sistema de Estilos Profesionales
-   ========================================================================== */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
@@ -30,7 +28,6 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset & Basic Setup */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -296,14 +293,26 @@ img {
 }
 
 /* Hero Section (Index Home) */
+/* Hero Section (Index Home) */
 .hero {
-  position: relative;
-  min-height: 540px;
-  background: linear-gradient(rgba(11, 41, 21, 0.82), rgba(7, 28, 14, 0.88)), url('../img/granja.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  color: white;
-  padding: 80px 20px;
+    position: relative;
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.40),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url('../img/granja.jpeg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 80px 20px;
 }
 
 .hero-container {
@@ -765,8 +774,8 @@ img {
 }
 
 .card-badge.badge-reserved {
-  background: rgba(217, 119, 6, 0.9);
-  color: #78350f;
+  background: rgba(37, 211, 106, 0.9);
+  color: #064e3b;
 }
 
 .card-badge.badge-upcoming {
